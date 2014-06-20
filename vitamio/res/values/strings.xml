@@ -11,10 +11,8 @@
     <string name="permission_write_providers_description">Delete, update or create new items in Vitamio providers.
     </string>
     <string name="VideoView_error_title">Cannot play video</string>
-    <string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
-        this device.
-    </string>
-    <string name="VideoView_error_text_unknown">Sorry, this video cannot be played.</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">媒体解码失败</string>
+    <string name="VideoView_error_text_unknown">网络连接失败，请稍后再试</string>
     <string name="VideoView_error_button">OK</string>
     <string name="mediacontroller_play_pause">Play/Pause</string>
 
