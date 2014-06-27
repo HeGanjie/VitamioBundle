@@ -212,7 +212,7 @@ public class Vitamio {
   }
 
   private static String copyCompressedLib(Context ctx, int rawID, String destName) {
-    byte[] buffer = new byte[1024];
+    byte[] buffer = new byte[1024 * 8];
     InputStream is = null;
     BufferedInputStream bis = null;
     FileOutputStream fos = null;
