@@ -414,6 +414,10 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
       mMediaPlayer.setBufferSize(mBufSize);
       mMediaPlayer.setVideoChroma(mVideoChroma == MediaPlayer.VIDEOCHROMA_RGB565 ? MediaPlayer.VIDEOCHROMA_RGB565 : MediaPlayer.VIDEOCHROMA_RGBA);
       mMediaPlayer.setScreenOnWhilePlaying(true);
+      if (cachePath != null) {
+    	  mMediaPlayer.setCacheDirectory(cachePath);
+    	  mMediaPlayer.setUseCache(true);
+      }
       mMediaPlayer.prepareAsync();
       mCurrentState = STATE_PREPARING;
       attachMediaController();
@@ -746,4 +750,7 @@ public class VideoView extends SurfaceView implements MediaController.MediaPlaye
   }
   
   public MediaPlayer getMediaPlayer() { return mMediaPlayer; }
+  
+  String cachePath;
+  public void setCachingDir(String path) { cachePath = path; }
 }
