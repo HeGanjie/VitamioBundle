@@ -19,5 +19,6 @@ local.properties
 
 # IntelliJ IDEA files
 *.iml
+.idea/
 
 .gradle/
