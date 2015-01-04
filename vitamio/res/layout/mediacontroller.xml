@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="74dp"
     android:background="@color/mediacontroller_bg"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:layout_gravity="bottom" >
 
     <RelativeLayout
         android:layout_width="match_parent"
