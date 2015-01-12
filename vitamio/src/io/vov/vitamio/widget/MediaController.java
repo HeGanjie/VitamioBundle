@@ -416,7 +416,7 @@ public class MediaController extends FrameLayout {
   @Override
   public boolean onTouchEvent(MotionEvent event) {
     show(sDefaultTimeout);
-    return true;
+    return false; // true will affect PlayerFrame onTouchEvent 
   }
 
   @Override
